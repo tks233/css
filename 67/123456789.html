@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="./page1.css" />
+	<meta charset="UTF-8">
+	<title>CSS 套用方式</title>
+</head>
+<body>
+
+</td></tr>
+<div id="header">
+		<h2>CSS 套用方式</h2>
+	</div>
+
+<h6><a href="http://www.1keydata.com/css-tutorial/tw/">CSS 教學</a> &nbsp;&gt;&nbsp;  套用方式</h6>
+<td>
+
+<td>
+
+<p>我們可以用以下四種方式，將 CSS 套用入 HTML 文件中： </p>
+<p></p><li><a href="#inline">行內套用 (Inline)</a>
+</li><li><a href="#embed">嵌入套用 (Embed)</a>
+</li><li><a href="#link">外部連接套用 (External Link)</a>
+</li><li><a href="#import">匯入套用 (Import)</a>
+
+<a name="inline"></a>
+<h3>行內套用</h3>
+
+<p>我們可以在 HTML 文件內直接宣告樣式。舉例來說， 
+
+</p><p><table border="0" width="500" class="main" cellpadding="10">
+<tbody><tr><td bgcolor="DDDDDD">
+<p>&lt;p style='font-family:verdana; font-size:16;'&gt;This is font size 16.&lt;/p&gt;
+</p></td></tr></tbody></table>
+
+</p><p>以上的 HTML 文件在瀏覽器上會顯現為：
+
+</p><p style="font-family:verdana; font-size:16;">This is font size 16.</p>
+
+<a name="embed"></a>
+<h3>嵌入套用</h3>
+
+<p>樣式可以嵌入於 HTML 文件中 (通常是在 &lt;head&gt; 內)。舉例來說， 
+
+</p><p><table border="0" width="500" class="main" cellpadding="10">
+<tbody><tr><td bgcolor="DDDDDD">
+<p>&lt;head&gt;
+<br> &nbsp;  &lt;style type="text/css"&gt;
+<br> &nbsp; &nbsp;    div {
+<br> &nbsp; &nbsp; &nbsp;      background-color:#FF0000;
+<br> &nbsp; &nbsp;    }
+<br> &nbsp;  &lt;/style&gt;
+<br>&lt;/head&gt;
+
+</p><p>&lt;body&gt;
+<br> &nbsp; &lt;div&gt;
+<br> &nbsp; &nbsp; 背景顏色是紅色
+<br> &nbsp; &lt;/div&gt;
+<br>&lt;/body&gt;
+</p></td></tr></tbody></table>
+
+</p><p>以上的 HTML 會顯現出：
+
+</p><p></p><div style="background-color:#FF0000;">背景顏色是紅色</div>
+
+<a name="link"></a>
+<h3>外部連接套用</h3>
+
+<p>在這種方式下，所有的 CSS 樣式宣告都是存在另外一個檔案中。該檔案通常名稱為 .css。在 HTML 文件的 &lt;header&gt; .. &lt;/header&gt; 之中，我們將用以下的程式碼將這個 .css 檔案連接進入：
+
+</p><p>&lt;link rel=stylesheet type="text/css" href="external-stylesheet.css"&gt;
+
+</p><p>以上這一行會將在 external-stylesheet.css 這個檔案內所宣告的樣式加入 HTML 文件內。
+
+<a name="import"></a>
+</p><h3>匯入套用</h3>
+
+<p>外部的 CSS 樣式也可以被匯入進 HTML 文件。匯入的做法為利用 @import 這個指令。@import 的語法為：
+
+</p><p>&lt;STYLE TYPE="text/css"&gt;
+<br>&lt;!--
+<br> &nbsp; @import url(http://www.mysite.com/style.css);
+<br>--&gt;
+<br>&lt;/STYLE&gt;
+
+</p><p>@import 指令最初的用意，是為了能夠針對不同的瀏覽器而運用不同的樣式。不過，現在已經沒有這個必要。現在用 @import 的目的，最常是要加入多個 CSS 樣式。當多個 CSS 樣式被 @import 的方式加入，而不同 CSS 樣式互相有衝突時，後被加入的 CSS 樣式有優先的順位 。
+
+
+<br>
+<br>
+
+
+	
+	<center>下一頁： <a href="margin.php">CSS 媒體類別</a></center></br>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#header {
+	width: 100%;
+	/*margin-left: 600px;*/
+	background-color: rgb(187, 217, 238);
+	height: 50px;
+	padding-top: 1px;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	color: purple;
+}
